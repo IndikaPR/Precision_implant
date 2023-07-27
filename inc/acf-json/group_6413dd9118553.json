@@ -22,7 +22,7 @@
         {
             "key": "field_64bf64072a30c",
             "label": "Image",
-            "name": "banner_image",
+            "name": "banner_img",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -209,7 +209,7 @@
         {
             "key": "field_64bf8379cc7d8",
             "label": "Image",
-            "name": "process_background_image",
+            "name": "process_bg_img",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -337,7 +337,7 @@
         {
             "key": "field_64bf9d918ce5e",
             "label": "Image",
-            "name": "schedule_background_image",
+            "name": "schedule_bg_img",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -415,7 +415,7 @@
         {
             "key": "field_64bfaa115ba58",
             "label": "Image",
-            "name": "testimonial_backrground_image",
+            "name": "testimonial_bg_img",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -641,7 +641,7 @@
             "sub_fields": [
                 {
                     "key": "field_64bfcd0cbc80d",
-                    "label": "Label",
+                    "label": "Question",
                     "name": "faq_label",
                     "aria-label": "",
                     "type": "text",
@@ -662,7 +662,7 @@
                 },
                 {
                     "key": "field_64bfcd74bc80e",
-                    "label": "Content",
+                    "label": "Answer",
                     "name": "faq_content",
                     "aria-label": "",
                     "type": "textarea",
@@ -704,5 +704,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1690373161
+    "modified": 1690428127
 }

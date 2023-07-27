@@ -6,7 +6,7 @@
     <?php getImage(get_field('background_image', 'option'), 'full-image'); ?>
     <div class="container" id="schedule">
         <div class="banner-image">
-            <?php getImage(get_field('banner_image'), 'full-image bg'); ?>
+            <?php getImage(get_field('banner_img'), 'full-image bg'); ?>
         </div>
         <div class="row">
             <div class="col-sm-12 col-lg-8">
@@ -52,7 +52,7 @@
 
 <?php if (have_rows('process_steps')) : ?>
     <section class="home-process" id="process">
-        <?php getImage(get_field('process_background_image'), 'full-image bg'); ?>
+        <?php getImage(get_field('process_bg_img'), 'full-image bg'); ?>
         <div class="container">
             <?php if (get_field('process_title')) : ?>
                 <div class="content-wrapper process-title"><?php the_field('process_title'); ?></div>
@@ -61,8 +61,8 @@
                 <div class="process-steps">
                     <?php while (have_rows('process_steps')) : the_row(); ?>
                         <div class="process-step">
-                            <p><?php the_sub_field('step'); ?></p>
                             <?php if (get_sub_field('step_content')) : ?>
+                                <p><?php the_sub_field('step'); ?></p>
                                 <?php $name = nl2br(get_sub_field('step_content')); ?>
                                 <p class="step-content"><?php echo $name; ?></p>
                             <?php endif; ?>
@@ -76,7 +76,7 @@
 
 <?php if (get_field('schedule_content')) : ?>
     <section class="home-schedule" id="schedule">
-        <?php getImage(get_field('schedule_background_image'), 'full-image bg'); ?>
+        <?php getImage(get_field('schedule_bg_img'), 'full-image bg'); ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -95,7 +95,7 @@
 
 <?php if (have_rows('testimonials')) : ?>
     <section class="home-testimonials" id="what-they-say">
-        <?php getImage(get_field('testimonial_backrground_image'), 'full-image bg'); ?>
+        <?php getImage(get_field('testimonial_bg_img'), 'full-image bg'); ?>
         <div class="container">
             <?php if (get_field('gallery_title')) : ?>
                 <div class="content-wrapper testimonial-title"><?php the_field('gallery_title'); ?></div>
@@ -104,7 +104,7 @@
 
             <?php
             $images = get_field('image_gallery');
-            $size = 'full'; // (thumbnail, medium, large, full or custom size)
+            $size = 'full';
             if ($images) : ?>
                 <ul>
                     <div class="image-gallery">
@@ -142,7 +142,7 @@
     </section>
 <?php endif; ?>
 
-<?php if (get_field('faq_title')) : ?>
+<?php if (have_rows('faq')) : ?>
     <section class="home-faq" id="faq">
         <div class="container">
             <?php if (get_field('faq_title')) : ?>
